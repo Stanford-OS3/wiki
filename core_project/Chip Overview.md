@@ -11,5 +11,7 @@ The convolution engine features an 8-bit add circuitry with a 16-bit multiply ci
 ## Cache System ##
 The cache system is an optional component for taking advantage of temperoral locality. Since the cache consists of SRAM which can be quite expensive area-wise, there is a limited amount that can be used in our chip (~100 KB in the SKY130). There is the potential for a cache to be relatively difficult to achieve based on the bandwidth that can be achieved with both the input and cache.
 
+Here is a link to SRAM IP we are looking to use SKY130 (if we use it): https://platform.efabless.com/design_catalog/ip_block/40
+
 ## SPI ## 
 The SPI influence in this system can be seen with the use of a syncronizing clock, chip select, and input and output data pins. For the use of this system, there are 32 data input pins (from FPGA to ASIC) and 2 data output pins (from ASIC to FPGA). If it can be utilized, we can use multi-data rate to achieve a necessary bandwidth. 
